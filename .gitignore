@@ -382,3 +382,5 @@ google-services.json
 
 # Android Profiling
 *.hprof
+#----------------
+desktop.ini
