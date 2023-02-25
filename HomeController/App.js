@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React  from 'react'
 import {
   Text, View, StyleSheet, Image,
   ScrollView, ImageBackground, TouchableOpacity, Alert, Button, TextInput, Modal,
@@ -10,7 +10,6 @@ import Icon from 'react-native-vector-icons/FontAwesome5'
 var height = Dimensions.get("screen").height
 var width = Dimensions.get("screen").width
 
-// import {LottieView} from 'lottie-react-native'
 
 import { createAppContainer, createSwitchNavigator } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
@@ -20,9 +19,9 @@ import Login from './Pages/Login'
 import Rooms from './Pages/Rooms'
 import ControllRooms from './Pages/ControllRooms'
 import SignUp from './Pages/SignUP'
-
-import Splash from './Pages/Splash'
-
+import AnyTest from './Pages/AnyTest'
+import Splash from './Pages/Splash'  
+import ViedoPlayer from './Pages/VideoPlayer'
 // export default class App extends React.Component {
 
 //   constructor(props) {
@@ -43,9 +42,7 @@ import Splash from './Pages/Splash'
 //     )
 //   }
 // }
-/**
- * 816    || 432
- */
+
 
 const Auth = createStackNavigator(
   {
@@ -92,6 +89,10 @@ const MyStack = createStackNavigator(
     ControllRooms: {
       screen: ControllRooms
     }
+    ,
+    ViedoPlayer:{
+      screen:ViedoPlayer
+    }
   }
   ,
   {
@@ -120,3 +121,10 @@ export default createAppContainer(
 const styles = StyleSheet.create({
 
 })
+
+
+/**
+ * 
+ * 
+ * 
+ */

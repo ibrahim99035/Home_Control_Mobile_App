@@ -1,16 +1,13 @@
 import * as React from 'react'
 import {
-  Text, View, StyleSheet, Image,
-  ScrollView, ImageBackground, TouchableOpacity, Alert, Button, TextInput, Modal,
-  Dimensions, AppRegistry, ActivityIndicator, Switch, FlatList
+    Text, View, StyleSheet, Image,
+    ScrollView, ImageBackground, TouchableOpacity, Alert, Button, TextInput, Modal,
+    Dimensions, AppRegistry, ActivityIndicator, Switch, FlatList
 } from 'react-native'
 
 import Icon from 'react-native-vector-icons/FontAwesome5'
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 import LottieView from 'lottie-react-native';
-
-import { createAppContainer, createSwitchNavigator } from 'react-navigation'
-import { createStackNavigator } from 'react-navigation-stack'
 
 export default class Splash extends React.Component {
 
@@ -18,7 +15,7 @@ export default class Splash extends React.Component {
     constructor(props) {
         super(props)
 
-        this.ref=React.createRef(null)
+        this.ref = React.createRef(null)
         this.state = {
 
         }
@@ -28,19 +25,29 @@ export default class Splash extends React.Component {
         setTimeout(() => {
             if (log == 1) {
                 this.props.navigation.navigate("MyStack")
-            }  else {
+            } else {
                 this.props.navigation.navigate("Auth")
-    
-            }  
-        }, 1000)
 
-      
+            }
+        }, 3000)
+
+
     }
 
     render() {
         return (
             <>
-                   <LottieView
+                <Image
+                    source={require("../img/one_titled.png")}
+                    style={{
+                        alignSelf: "center",
+                        width: "25%",
+                        height: RFPercentage(12),
+
+                    }}
+
+                />
+                <LottieView
                     ref={this.ref}
                     source={require("../assets/lottie/68902-home.json")}
                     loop={false}

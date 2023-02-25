@@ -11,7 +11,6 @@ var height = Dimensions.get("screen").height
 var width = Dimensions.get("screen").width
 import * as Constants from "../Constants/Constants"
 
-import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 
 
 export default class Login extends React.Component {
@@ -60,8 +59,8 @@ export default class Login extends React.Component {
                             width: "100%", height: "35%", backgroundColor: Constants.mainColor,
                             alignItems: "center",
                         }}>
-                            <Image source={require("../img/logo.png")}
-                                style={{ width: RFPercentage(30), height: RFPercentage(30) }}
+                            <Image source={require("../img/one_titled.png")}
+                                style={{ width: RFPercentage(25), height: RFPercentage(25) }}
                             />
                         </View>
                         <View style={styles.loginView}>
