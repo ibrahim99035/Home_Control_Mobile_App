@@ -267,14 +267,14 @@ export default class Home extends React.Component {
                             <Text style={styles.mainFont}>Controller</Text>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={styles.buttonStyle}
+                        {/* <TouchableOpacity style={styles.buttonStyle}
                             onPress={() => {
                                 this.props.navigation.navigate("ViedoPlayer")
                             }
                             }
                         >
                             <Text style={styles.mainFont}>video conference</Text>
-                        </TouchableOpacity>
+                        </TouchableOpacity> */}
                     </View>
 
 
